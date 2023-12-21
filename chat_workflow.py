@@ -30,7 +30,7 @@ def chain_workflow(openai_api_key):
         # If it doesn't exist, create it
 
         # load document
-        file = "mydocument/animalsinresearch.pdf"
+        file = "mydocument/europe_strategic_defense.pdf"
         loader = PyPDFLoader(file)
         documents = loader.load()
 

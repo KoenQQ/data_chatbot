@@ -3,11 +3,11 @@ import streamlit as st
 from chat_workflow import chain_workflow
 
 # Custom image for the app icon and the assistant's avatar
-assistant_logo = 'https://cdn.pixabay.com/photo/2016/06/28/13/51/dog-1484728_1280.png'
+assistant_logo = 'https://freepngimg.com/thumb/military_tank/1-2-tank-png-file.png'
 
 # Configure Streamlit page
 st.set_page_config(
-    page_title="Animals in Research",
+    page_title="European strategic defense bot",
     page_icon=assistant_logo
 )
 
@@ -29,7 +29,7 @@ for message in st.session_state.messages:
             st.markdown(message["content"])
 
 # Chat logic
-if query := st.chat_input("Ask me about animals in research"):
+if query := st.chat_input("Ask me about european strategic defense"):
     if len(openai_api_key) <= 3:
         st.sidebar.error("☝️ Put in your openapi key")
     else:
